@@ -4,8 +4,8 @@ const app = express();
 // const PORT = 5000;
 const cors = require("cors");
 
-// Use the PORT environment variable or fallback to 5000
-const PORT = process.env.PORT || 3306;
+// Use the PORT environment variable or fallback to 5000/3306 
+const PORT = process.env.PORT || 5000;
 // console.log(process.env.PORT);
 
 app.use(cors());

@@ -31,16 +31,16 @@ const dbConnection = mysql2.createPool({
   queueLimit: 0, // Maximum number of connection requests the pool will queue before returning an error
 });
 
-// console.log(process.env.USER);
-// console.log(process.env.DATABASE);
-// console.log(process.env.HOST);
-// console.log(process.env.PASSWORD);
-// dbConnection.execute("select'test'", (error, result) => {
-//   if (error) {
-//     console.log(error.message);
-//   } else {
-//     console.log(result);
-//   }
-// });
+console.log(process.env.USER);
+console.log(process.env.DATABASE);
+console.log(process.env.HOST);
+console.log(process.env.PASSWORD);
+dbConnection.execute("select'test'", (error, result) => {
+  if (error) {
+    console.log(error.message);
+  } else {
+    console.log(result);
+  }
+});
 
 module.exports = dbConnection.promise();
